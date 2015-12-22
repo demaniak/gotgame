@@ -5,7 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} " />
+    <!-- <p th:text="'Hello, ' + ${name} " /> -->
+    <p>
+    Hello.
+    </p>
     <p>Do you want to play a game?</p>
+    
+    <a th:href="@{/startGame(a=y)}">Yes</a>
+    <a th:href="@{/startGame(a=n)}">No</a>
 </body>
 </html>

@@ -12,7 +12,7 @@ public class HomeController {
         // TODO Auto-generated constructor stub
     }
     
-    @RequestMapping("/start")
+    @RequestMapping("/home")
     public final  String greeting ( @RequestParam(value="name", required=false, defaultValue="Jarod") String name, Model model) {
         model.addAttribute("name", name);
         return "greeting";
