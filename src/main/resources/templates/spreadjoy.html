@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Invite more friends</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Who will be next?</h1>
+    <form action="#" th:action="@{/submitfriends}" th:object="${newfriends}" method="post">
+    	<p>New Friend One <input type="email" required="yes" th:field="*{email1}" /></p>
+        <p>New Friend Two <input type="email" required="yes" th:field="*{email2}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
